@@ -77,7 +77,7 @@ const update = async (req, res) => {
 const remove = async (req, res) => {
   try {
     await Receita.destroy({ where: { id: req.params.id } });
-    res.redirect("/");
+    res.redirect("/index");
   } catch (err) {
     res.status(500).send({ err: err.message });
   }
