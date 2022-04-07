@@ -2,7 +2,7 @@
 const routes = require("express").Router();
 // const Router = require("express");
 // const { route } = require("express/lib/application");
-const ReceitasController = require("./src/controllers/ReceitasController");
+const ReceitasController = require("../controllers/ReceitasController");
 
 routes.get("/", ReceitasController.getAll);
 routes.get("/cadastro", ReceitasController.cadastro);

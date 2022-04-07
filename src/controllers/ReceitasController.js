@@ -1,5 +1,5 @@
 const res = require("express/lib/response");
-const Receita = require("./src/models/Receita");
+const Receita = require("../models/Receita");
 let mensagem = "";
 
 const getAll = async (req, res) => {
